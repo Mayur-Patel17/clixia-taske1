@@ -1,0 +1,625 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="AI-generated website">
+        <meta name="theme-color" content="#ffffff">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+
+        <link rel="stylesheet" href="css/media.css">
+
+        <!-- Performance optimization: Preload critical resources -->
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            as="style">
+
+        <!-- Core CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+        <!-- Utilities and Components -->
+        <script defer src="js/cdn.min.js"></script>
+        <script defer src="js/apexcharts.min.js"></script>
+
+        <!-- Optimized Font Loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+
+        <!-- Base Styles -->
+        <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+        <!-- Enhanced Image Handler -->
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+    </head>
+    <body>
+        <nav>
+            <nav id="navbar" class="bg-neutral-900 fixed w-full z-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <span
+                                    class="text-2xl font-bold text-white">Bistro</span>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="index.html#home"
+                                    class="text-white hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                                <a href="index.html#menu"
+                                    class="text-gray-300 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Menu</a>
+                                <a href="index.html#reservations"
+                                    class="text-gray-300 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reservations</a>
+                                <a href="index.html#about"
+                                    class="text-gray-300 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                                <a href="index.html#contact"
+                                    class="text-gray-300 hover:bg-neutral-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            </div>
+                        </div>
+                        <div class="md:hidden">
+                            <button type="button"
+                                class="hamburger-btn inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-neutral-700 focus:outline-none"
+                                aria-controls="mobile-menu"
+                                aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="block h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="#"
+                            class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Menu</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reservations</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-neutral-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+        <!-- main content -->
+        <main style="padding-top: 6rem;">
+            <!-- Your main content here -->
+
+            <div class="container">
+                <div id="menu-content">
+                    <div class="menu-category active" data-category="starters">
+                        <div
+                            class=" starter-menu grid md:grid-cols-2 gap-8 animate__animated animate__fadeIn">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <img
+                                            src="https://www.taylorfarms.com/wp-content/uploads/2024/03/Taylor-Farms-Classic-Caesar-Salad-Recipe-with-Homemade-Dressing-Croutons-1.webp"
+                                            alt="Classic Caesar Salad"
+                                            class="w-full h-auto rounded-lg mb-4"
+                                            style="width: 50vh; height: auto;">
+                                        <h3
+                                            class="text-xl font-bold text-neutral-900">Classic
+                                            Caesar Salad</h3>
+                                        <p class="text-neutral-600 mt-2">Crisp
+                                            romaine,
+                                            garlic
+                                            croutons, parmesan</p>
+                                    </div>
+                                    <span
+                                        class="food-price text-amber-500 font-bold">&#8377;30</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <img
+                                            src="https://www.taylorfarms.com/wp-content/uploads/2024/03/Taylor-Farms-Classic-Caesar-Salad-Recipe-with-Homemade-Dressing-Croutons-1.webp"
+                                            alt="Classic Caesar Salad"
+                                            class="w-full h-auto rounded-lg mb-4"
+                                            style="width: 50vh; height: auto;">
+                                        <h3
+                                            class="text-xl font-bold text-neutral-900">French
+                                            Onion Soup</h3>
+                                        <p
+                                            class="text-neutral-600 mt-2">Caramelized
+                                            onions,
+                                            gruyere cheese</p>
+                                    </div>
+                                    <span
+                                        class="food-price text-amber-500 font-bold">&#8377;60</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <img
+                                            src="https://www.taylorfarms.com/wp-content/uploads/2024/03/Taylor-Farms-Classic-Caesar-Salad-Recipe-with-Homemade-Dressing-Croutons-1.webp"
+                                            alt="Classic Caesar Salad"
+                                            class="w-full h-auto rounded-lg mb-4"
+                                            style="width: 50vh; height: auto;">
+                                        <h3
+                                            class="text-xl font-bold text-neutral-900">Paneer
+                                            65</h3>
+                                        <p class="text-neutral-600 mt-2">Crispy
+                                            masala,
+                                            hot </p>
+                                    </div>
+                                    <span
+                                        class="food-price text-amber-500 font-bold">&#8377;50</span>
+                                </div>
+                            </div>
+                            <div class="back-button-container">
+                                <a href="index.html#home"><button type
+                                        class="more-starters bg-amber-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-amber-600 transition-colors duration-300 flex items-center mx-auto"
+                                        data-category="starters">&#8592; Backe
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="bg-neutral-900 text-white pt-16 pb-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="footer-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                        <!-- About -->
+                        <div class="animate__animated animate__fadeIn">
+                            <h3 class="text-2xl font-bold mb-6">Bistro</h3>
+                            <p class="text-gray-400 mb-6">Experience fine dining
+                                at its
+                                best. Our passionate team creates unforgettable
+                                culinary
+                                experiences.</p>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="text-gray-400 hover:text-amber-500 transition-colors duration-300">
+                                    <span class="sr-only">Facebook</span>
+                                    <svg class="w-6 h-6" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-400 hover:text-amber-500 transition-colors duration-300">
+                                    <span class="sr-only">Instagram</span>
+                                    <svg class="w-6 h-6" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="animate__animated animate__fadeIn"
+                            style="animation-delay: 0.2s;">
+                            <h4 class="text-lg font-semibold mb-6">Quick
+                                Links</h4>
+                            <ul class="space-y-4">
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-amber-500 transition-colors duration-300">Home</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-amber-500 transition-colors duration-300">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-amber-500 transition-colors duration-300">Menu</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-amber-500 transition-colors duration-300">Reservations</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-amber-500 transition-colors duration-300">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="animate__animated animate__fadeIn"
+                            style="animation-delay: 0.4s;">
+                            <h4 class="text-lg font-semibold mb-6">Contact
+                                Info</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <svg
+                                        class="w-6 h-6 text-amber-500 mt-1 mr-3"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-gray-400">123 Dining
+                                        Street, Foodville,
+                                        FC
+                                        12345</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg
+                                        class="w-6 h-6 text-amber-500 mt-1 mr-3"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    <span class="text-gray-400">+1 234 567
+                                        890</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg
+                                        class="w-6 h-6 text-amber-500 mt-1 mr-3"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span
+                                        class="text-gray-400">info@restaurant.com</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Opening Hours -->
+                        <div class="animate__animated animate__fadeIn"
+                            style="animation-delay: 0.6s;">
+                            <h4 class="text-lg font-semibold mb-6">Opening
+                                Hours</h4>
+                            <ul class="space-y-4">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-400">Monday -
+                                        Thursday</span>
+                                    <span class="text-amber-500">17:00 -
+                                        22:00</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-400">Friday -
+                                        Saturday</span>
+                                    <span class="text-amber-500">17:00 -
+                                        23:00</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-400">Sunday</span>
+                                    <span class="text-amber-500">17:00 -
+                                        21:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-neutral-800 pt-8">
+                        <div class="text-center text-gray-400">
+                            <p>© 2024 Bistro. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

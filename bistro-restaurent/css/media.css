@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1025px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    background-color: red !important;
+  }
+}
+/* .starter-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red !important;
+  flex: 1;
+} */
+.back-image {
+  background-image: url("https://assets.bonappetit.com/photos/57acf62a53e63daf11a4dbee/1:1/w_1920,c_limit/best-ever-grilled-cheese.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.mx-auto {
+  margin: auto;
+}
+.container {
+  position: static;
+}
+nav {
+  background-color: #333; /* Dark background color for the navbar */
+  overflow: hidden; /* Ensures content doesn't overflow the navbar */
+}
+
+nav a {
+  float: right; /* Aligns the links horizontally */
+  display: block;
+  color: white; /* Text color for the links */
+  text-align: center;
+  padding: 14px 20px; /* Adds padding to the links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Hover effect for links */
+nav a:hover {
+  background-color: #ddd; /* Light gray background when hovered */
+  color: black; /* Text color when hovered */
+}
+
+/* Navbar container - Center the navbar content */
+.navbar-container {
+  width: 100%;
+  margin: 10px;
+}
+.food-price {
+  font-size: 30px;
+}
+
+.starter-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 8px; /* Adjust the gap as needed */
+}
